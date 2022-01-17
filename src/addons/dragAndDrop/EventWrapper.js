@@ -110,7 +110,8 @@ class EventWrapper extends React.Component {
      * events at the edges of the calendar's min/max location.
      */
     const isResizable =
-      resizable && (resizableAccessor ? !!get(event, resizableAccessor) : true)
+      /*resizable && (resizableAccessor ? !!get(event, resizableAccessor) : true)*/
+    false;
 
     if (isResizable || isDraggable) {
       /*
